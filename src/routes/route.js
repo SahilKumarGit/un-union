@@ -11,10 +11,7 @@ const route = express.Router()
 
 
 route.post('/authenticate', login_user)
-
 route.get('/user', auth_o, user)
-
-
 route.post('/follow/:id', auth_o, follow_some_one)
 route.post('/unfollow/:id', auth_o, unfollow_some_one)
 
