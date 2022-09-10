@@ -16,7 +16,7 @@ mongoose.connect(process.env.MONGODB)
 
 app.use('/api/', route)
 app.use('/**', (req, res) => {
-    bad(res, 404, 'Opps, Something wents worng. There is response related to this path')
+    bad(res, 404, 'Opps, Something wents worng. There are no response related to this path')
 })
 
 app.listen(port, (_) => {
